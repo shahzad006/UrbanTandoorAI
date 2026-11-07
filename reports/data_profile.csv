@@ -1,0 +1,20 @@
+Workbook,Sheet,Rows,Columns,Missing Values,Duplicate Rows
+Menu,Menu_Items,118,18,0,0
+Menu,Categories,8,5,0,0
+Menu,Variants,148,8,0,0
+Menu,Addons,10,9,2,0
+Menu,Item_Addons,284,5,0,0
+Menu,Branch_Menu,236,10,172,0
+Menu,Inventory_Links,236,6,172,0
+Menu,Item_Aliases,158,5,0,0
+Menu,Deals,6,12,6,0
+Menu,Deal_Items,15,5,0,0
+Menu,Allergen_Guide,8,4,0,0
+Menu,Service_Rules,7,6,0,0
+Inventory,Branches,2,7,0,0
+Inventory,Ingredients,60,9,0,0
+Inventory,Branch_Stock,120,20,0,0
+Inventory,Recipes,130,10,0,0
+Inventory,Menu_Availability,32,9,0,0
+Inventory,Stock_Movements,8,10,0,0
+Inventory,Suppliers,7,5,0,0

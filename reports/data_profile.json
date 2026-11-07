@@ -1,0 +1,757 @@
+[
+    {
+        "workbook": "Menu",
+        "sheet_name": "Menu_Items",
+        "total_rows": 118,
+        "total_columns": 18,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Menu_ID",
+            "Item_Name",
+            "Category_ID",
+            "Category",
+            "Description",
+            "Base_Price_PKR",
+            "Currency",
+            "Item_Type",
+            "Catalog_Status",
+            "Recipe_Linked",
+            "Prep_Time_Min",
+            "Dietary_Hint",
+            "Allergen_Hint",
+            "Allergen_Verified",
+            "Service_Window",
+            "Upsell_Eligible",
+            "Slug",
+            "Data_Provenance"
+        ],
+        "data_types": {
+            "Menu_ID": "str",
+            "Item_Name": "str",
+            "Category_ID": "str",
+            "Category": "str",
+            "Description": "str",
+            "Base_Price_PKR": "int64",
+            "Currency": "str",
+            "Item_Type": "str",
+            "Catalog_Status": "str",
+            "Recipe_Linked": "str",
+            "Prep_Time_Min": "int64",
+            "Dietary_Hint": "str",
+            "Allergen_Hint": "str",
+            "Allergen_Verified": "str",
+            "Service_Window": "str",
+            "Upsell_Eligible": "str",
+            "Slug": "str",
+            "Data_Provenance": "str"
+        },
+        "missing_by_column": {
+            "Menu_ID": 0,
+            "Item_Name": 0,
+            "Category_ID": 0,
+            "Category": 0,
+            "Description": 0,
+            "Base_Price_PKR": 0,
+            "Currency": 0,
+            "Item_Type": 0,
+            "Catalog_Status": 0,
+            "Recipe_Linked": 0,
+            "Prep_Time_Min": 0,
+            "Dietary_Hint": 0,
+            "Allergen_Hint": 0,
+            "Allergen_Verified": 0,
+            "Service_Window": 0,
+            "Upsell_Eligible": 0,
+            "Slug": 0,
+            "Data_Provenance": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Categories",
+        "total_rows": 8,
+        "total_columns": 5,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Category_ID",
+            "Category_Name",
+            "Sort_Order",
+            "Status",
+            "Customer_Description"
+        ],
+        "data_types": {
+            "Category_ID": "str",
+            "Category_Name": "str",
+            "Sort_Order": "int64",
+            "Status": "str",
+            "Customer_Description": "str"
+        },
+        "missing_by_column": {
+            "Category_ID": 0,
+            "Category_Name": 0,
+            "Sort_Order": 0,
+            "Status": 0,
+            "Customer_Description": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Variants",
+        "total_rows": 148,
+        "total_columns": 8,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Variant_ID",
+            "Menu_ID",
+            "Variant_Name",
+            "Price_PKR",
+            "Recipe_Multiplier_Est",
+            "Shown_In_Menu",
+            "Approved_For_Orders",
+            "Operational_Notes"
+        ],
+        "data_types": {
+            "Variant_ID": "str",
+            "Menu_ID": "str",
+            "Variant_Name": "str",
+            "Price_PKR": "int64",
+            "Recipe_Multiplier_Est": "float64",
+            "Shown_In_Menu": "str",
+            "Approved_For_Orders": "str",
+            "Operational_Notes": "str"
+        },
+        "missing_by_column": {
+            "Variant_ID": 0,
+            "Menu_ID": 0,
+            "Variant_Name": 0,
+            "Price_PKR": 0,
+            "Recipe_Multiplier_Est": 0,
+            "Shown_In_Menu": 0,
+            "Approved_For_Orders": 0,
+            "Operational_Notes": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Addons",
+        "total_rows": 10,
+        "total_columns": 9,
+        "missing_values": 2,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Addon_ID",
+            "Addon_Name",
+            "Price_PKR",
+            "Category",
+            "Allergen_Hint",
+            "Ingredient_ID",
+            "Qty_Ingredient_Units",
+            "Shown_In_Menu",
+            "Order_Status"
+        ],
+        "data_types": {
+            "Addon_ID": "str",
+            "Addon_Name": "str",
+            "Price_PKR": "int64",
+            "Category": "str",
+            "Allergen_Hint": "str",
+            "Ingredient_ID": "str",
+            "Qty_Ingredient_Units": "float64",
+            "Shown_In_Menu": "str",
+            "Order_Status": "str"
+        },
+        "missing_by_column": {
+            "Addon_ID": 0,
+            "Addon_Name": 0,
+            "Price_PKR": 0,
+            "Category": 0,
+            "Allergen_Hint": 0,
+            "Ingredient_ID": 1,
+            "Qty_Ingredient_Units": 1,
+            "Shown_In_Menu": 0,
+            "Order_Status": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Item_Addons",
+        "total_rows": 284,
+        "total_columns": 5,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Mapping_ID",
+            "Menu_ID",
+            "Addon_ID",
+            "Selectable",
+            "Operational_Notes"
+        ],
+        "data_types": {
+            "Mapping_ID": "str",
+            "Menu_ID": "str",
+            "Addon_ID": "str",
+            "Selectable": "str",
+            "Operational_Notes": "str"
+        },
+        "missing_by_column": {
+            "Mapping_ID": 0,
+            "Menu_ID": 0,
+            "Addon_ID": 0,
+            "Selectable": 0,
+            "Operational_Notes": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Branch_Menu",
+        "total_rows": 236,
+        "total_columns": 10,
+        "missing_values": 172,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Branch_Menu_ID",
+            "Branch_ID",
+            "Branch_Name",
+            "Menu_ID",
+            "Enabled_For_Order",
+            "Price_PKR",
+            "Base_Variant_Orderable",
+            "Stock_Decision",
+            "Snapshot_Max_Portions",
+            "Notes"
+        ],
+        "data_types": {
+            "Branch_Menu_ID": "str",
+            "Branch_ID": "str",
+            "Branch_Name": "str",
+            "Menu_ID": "str",
+            "Enabled_For_Order": "str",
+            "Price_PKR": "int64",
+            "Base_Variant_Orderable": "str",
+            "Stock_Decision": "str",
+            "Snapshot_Max_Portions": "float64",
+            "Notes": "str"
+        },
+        "missing_by_column": {
+            "Branch_Menu_ID": 0,
+            "Branch_ID": 0,
+            "Branch_Name": 0,
+            "Menu_ID": 0,
+            "Enabled_For_Order": 0,
+            "Price_PKR": 0,
+            "Base_Variant_Orderable": 0,
+            "Stock_Decision": 0,
+            "Snapshot_Max_Portions": 172,
+            "Notes": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Inventory_Links",
+        "total_rows": 236,
+        "total_columns": 6,
+        "missing_values": 172,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Menu_ID",
+            "Branch_ID",
+            "Recipe_Linked",
+            "Snapshot_Max_Portions",
+            "Recipe_Link_Status",
+            "Runtime_Check_Policy"
+        ],
+        "data_types": {
+            "Menu_ID": "str",
+            "Branch_ID": "str",
+            "Recipe_Linked": "str",
+            "Snapshot_Max_Portions": "float64",
+            "Recipe_Link_Status": "str",
+            "Runtime_Check_Policy": "str"
+        },
+        "missing_by_column": {
+            "Menu_ID": 0,
+            "Branch_ID": 0,
+            "Recipe_Linked": 0,
+            "Snapshot_Max_Portions": 172,
+            "Recipe_Link_Status": 0,
+            "Runtime_Check_Policy": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Item_Aliases",
+        "total_rows": 158,
+        "total_columns": 5,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Alias_ID",
+            "Menu_ID",
+            "Customer_Phrase",
+            "Language",
+            "Alias_Notes"
+        ],
+        "data_types": {
+            "Alias_ID": "str",
+            "Menu_ID": "str",
+            "Customer_Phrase": "str",
+            "Language": "str",
+            "Alias_Notes": "str"
+        },
+        "missing_by_column": {
+            "Alias_ID": 0,
+            "Menu_ID": 0,
+            "Customer_Phrase": 0,
+            "Language": 0,
+            "Alias_Notes": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Deals",
+        "total_rows": 6,
+        "total_columns": 12,
+        "missing_values": 6,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Deal_ID",
+            "Deal_Name",
+            "Deal_Type",
+            "Description",
+            "Deal_Price_PKR",
+            "Currency",
+            "Approval_Status",
+            "Branches",
+            "Service_Window",
+            "Min_Spend_PKR",
+            "Stack_Bank_Discount",
+            "Policy_Notes"
+        ],
+        "data_types": {
+            "Deal_ID": "str",
+            "Deal_Name": "str",
+            "Deal_Type": "str",
+            "Description": "str",
+            "Deal_Price_PKR": "int64",
+            "Currency": "str",
+            "Approval_Status": "str",
+            "Branches": "str",
+            "Service_Window": "str",
+            "Min_Spend_PKR": "float64",
+            "Stack_Bank_Discount": "str",
+            "Policy_Notes": "str"
+        },
+        "missing_by_column": {
+            "Deal_ID": 0,
+            "Deal_Name": 0,
+            "Deal_Type": 0,
+            "Description": 0,
+            "Deal_Price_PKR": 0,
+            "Currency": 0,
+            "Approval_Status": 0,
+            "Branches": 0,
+            "Service_Window": 0,
+            "Min_Spend_PKR": 6,
+            "Stack_Bank_Discount": 0,
+            "Policy_Notes": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Deal_Items",
+        "total_rows": 15,
+        "total_columns": 5,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Deal_ID",
+            "Menu_ID",
+            "Item_Name",
+            "Qty",
+            "Variant_ID"
+        ],
+        "data_types": {
+            "Deal_ID": "str",
+            "Menu_ID": "str",
+            "Item_Name": "str",
+            "Qty": "int64",
+            "Variant_ID": "str"
+        },
+        "missing_by_column": {
+            "Deal_ID": 0,
+            "Menu_ID": 0,
+            "Item_Name": 0,
+            "Qty": 0,
+            "Variant_ID": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Allergen_Guide",
+        "total_rows": 8,
+        "total_columns": 4,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Allergen_Code",
+            "Display_Name",
+            "Status",
+            "Use_Policy"
+        ],
+        "data_types": {
+            "Allergen_Code": "str",
+            "Display_Name": "str",
+            "Status": "str",
+            "Use_Policy": "str"
+        },
+        "missing_by_column": {
+            "Allergen_Code": 0,
+            "Display_Name": 0,
+            "Status": 0,
+            "Use_Policy": 0
+        }
+    },
+    {
+        "workbook": "Menu",
+        "sheet_name": "Service_Rules",
+        "total_rows": 7,
+        "total_columns": 6,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Rule_ID",
+            "Rule_Name",
+            "Value",
+            "Applies_To",
+            "Verification_Status",
+            "Comment"
+        ],
+        "data_types": {
+            "Rule_ID": "str",
+            "Rule_Name": "str",
+            "Value": "str",
+            "Applies_To": "str",
+            "Verification_Status": "str",
+            "Comment": "str"
+        },
+        "missing_by_column": {
+            "Rule_ID": 0,
+            "Rule_Name": 0,
+            "Value": 0,
+            "Applies_To": 0,
+            "Verification_Status": 0,
+            "Comment": 0
+        }
+    },
+    {
+        "workbook": "Inventory",
+        "sheet_name": "Branches",
+        "total_rows": 2,
+        "total_columns": 7,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Branch_ID",
+            "Branch_Name",
+            "Address_Demo",
+            "Tables",
+            "Seats",
+            "Hours",
+            "Status"
+        ],
+        "data_types": {
+            "Branch_ID": "str",
+            "Branch_Name": "str",
+            "Address_Demo": "str",
+            "Tables": "int64",
+            "Seats": "int64",
+            "Hours": "str",
+            "Status": "str"
+        },
+        "missing_by_column": {
+            "Branch_ID": 0,
+            "Branch_Name": 0,
+            "Address_Demo": 0,
+            "Tables": 0,
+            "Seats": 0,
+            "Hours": 0,
+            "Status": 0
+        }
+    },
+    {
+        "workbook": "Inventory",
+        "sheet_name": "Ingredients",
+        "total_rows": 60,
+        "total_columns": 9,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Ingredient_ID",
+            "Ingredient_Name",
+            "Category",
+            "Unit",
+            "Unit_Cost_PKR",
+            "Default_Reorder",
+            "Default_Target",
+            "Supplier_ID",
+            "Status"
+        ],
+        "data_types": {
+            "Ingredient_ID": "str",
+            "Ingredient_Name": "str",
+            "Category": "str",
+            "Unit": "str",
+            "Unit_Cost_PKR": "int64",
+            "Default_Reorder": "float64",
+            "Default_Target": "int64",
+            "Supplier_ID": "str",
+            "Status": "str"
+        },
+        "missing_by_column": {
+            "Ingredient_ID": 0,
+            "Ingredient_Name": 0,
+            "Category": 0,
+            "Unit": 0,
+            "Unit_Cost_PKR": 0,
+            "Default_Reorder": 0,
+            "Default_Target": 0,
+            "Supplier_ID": 0,
+            "Status": 0
+        }
+    },
+    {
+        "workbook": "Inventory",
+        "sheet_name": "Branch_Stock",
+        "total_rows": 120,
+        "total_columns": 20,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Branch_ID",
+            "Ingredient_ID",
+            "Ingredient_Name",
+            "Category",
+            "Unit",
+            "Opening",
+            "Received",
+            "Consumed",
+            "Wastage",
+            "Adjustment",
+            "Reserved",
+            "On_Hand",
+            "Available",
+            "Reorder_Level",
+            "Target_Stock",
+            "Suggested_Buy",
+            "Stock_Status",
+            "Unit_Cost_PKR",
+            "Stock_Value_PKR",
+            "Updated_At"
+        ],
+        "data_types": {
+            "Branch_ID": "str",
+            "Ingredient_ID": "str",
+            "Ingredient_Name": "str",
+            "Category": "str",
+            "Unit": "str",
+            "Opening": "float64",
+            "Received": "float64",
+            "Consumed": "float64",
+            "Wastage": "float64",
+            "Adjustment": "int64",
+            "Reserved": "float64",
+            "On_Hand": "float64",
+            "Available": "float64",
+            "Reorder_Level": "float64",
+            "Target_Stock": "int64",
+            "Suggested_Buy": "float64",
+            "Stock_Status": "str",
+            "Unit_Cost_PKR": "int64",
+            "Stock_Value_PKR": "float64",
+            "Updated_At": "str"
+        },
+        "missing_by_column": {
+            "Branch_ID": 0,
+            "Ingredient_ID": 0,
+            "Ingredient_Name": 0,
+            "Category": 0,
+            "Unit": 0,
+            "Opening": 0,
+            "Received": 0,
+            "Consumed": 0,
+            "Wastage": 0,
+            "Adjustment": 0,
+            "Reserved": 0,
+            "On_Hand": 0,
+            "Available": 0,
+            "Reorder_Level": 0,
+            "Target_Stock": 0,
+            "Suggested_Buy": 0,
+            "Stock_Status": 0,
+            "Unit_Cost_PKR": 0,
+            "Stock_Value_PKR": 0,
+            "Updated_At": 0
+        }
+    },
+    {
+        "workbook": "Inventory",
+        "sheet_name": "Recipes",
+        "total_rows": 130,
+        "total_columns": 10,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Menu_ID",
+            "Menu_Item",
+            "Category",
+            "Ingredient_ID",
+            "Qty_Per_Portion",
+            "PECHS_Available",
+            "PECHS_Max_Portions",
+            "Gulshan_Available",
+            "Gulshan_Max_Portions",
+            "Ingredient_Name"
+        ],
+        "data_types": {
+            "Menu_ID": "str",
+            "Menu_Item": "str",
+            "Category": "str",
+            "Ingredient_ID": "str",
+            "Qty_Per_Portion": "float64",
+            "PECHS_Available": "float64",
+            "PECHS_Max_Portions": "int64",
+            "Gulshan_Available": "float64",
+            "Gulshan_Max_Portions": "int64",
+            "Ingredient_Name": "str"
+        },
+        "missing_by_column": {
+            "Menu_ID": 0,
+            "Menu_Item": 0,
+            "Category": 0,
+            "Ingredient_ID": 0,
+            "Qty_Per_Portion": 0,
+            "PECHS_Available": 0,
+            "PECHS_Max_Portions": 0,
+            "Gulshan_Available": 0,
+            "Gulshan_Max_Portions": 0,
+            "Ingredient_Name": 0
+        }
+    },
+    {
+        "workbook": "Inventory",
+        "sheet_name": "Menu_Availability",
+        "total_rows": 32,
+        "total_columns": 9,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Menu_ID",
+            "Menu_Item",
+            "Category",
+            "Menu_Status",
+            "PECHS_Max",
+            "PECHS_Status",
+            "Gulshan_Max",
+            "Gulshan_Status",
+            "Notes"
+        ],
+        "data_types": {
+            "Menu_ID": "str",
+            "Menu_Item": "str",
+            "Category": "str",
+            "Menu_Status": "str",
+            "PECHS_Max": "int64",
+            "PECHS_Status": "str",
+            "Gulshan_Max": "int64",
+            "Gulshan_Status": "str",
+            "Notes": "str"
+        },
+        "missing_by_column": {
+            "Menu_ID": 0,
+            "Menu_Item": 0,
+            "Category": 0,
+            "Menu_Status": 0,
+            "PECHS_Max": 0,
+            "PECHS_Status": 0,
+            "Gulshan_Max": 0,
+            "Gulshan_Status": 0,
+            "Notes": 0
+        }
+    },
+    {
+        "workbook": "Inventory",
+        "sheet_name": "Stock_Movements",
+        "total_rows": 8,
+        "total_columns": 10,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Movement_ID",
+            "Movement_Date",
+            "Branch_ID",
+            "Ingredient_ID",
+            "Movement_Type",
+            "Qty_Signed",
+            "Unit",
+            "Reference",
+            "Reason",
+            "Data_Type"
+        ],
+        "data_types": {
+            "Movement_ID": "str",
+            "Movement_Date": "str",
+            "Branch_ID": "str",
+            "Ingredient_ID": "str",
+            "Movement_Type": "str",
+            "Qty_Signed": "float64",
+            "Unit": "str",
+            "Reference": "str",
+            "Reason": "str",
+            "Data_Type": "str"
+        },
+        "missing_by_column": {
+            "Movement_ID": 0,
+            "Movement_Date": 0,
+            "Branch_ID": 0,
+            "Ingredient_ID": 0,
+            "Movement_Type": 0,
+            "Qty_Signed": 0,
+            "Unit": 0,
+            "Reference": 0,
+            "Reason": 0,
+            "Data_Type": 0
+        }
+    },
+    {
+        "workbook": "Inventory",
+        "sheet_name": "Suppliers",
+        "total_rows": 7,
+        "total_columns": 5,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "column_names": [
+            "Supplier_ID",
+            "Supplier_Name",
+            "Supply_Category",
+            "Contact",
+            "Verification"
+        ],
+        "data_types": {
+            "Supplier_ID": "str",
+            "Supplier_Name": "str",
+            "Supply_Category": "str",
+            "Contact": "str",
+            "Verification": "str"
+        },
+        "missing_by_column": {
+            "Supplier_ID": 0,
+            "Supplier_Name": 0,
+            "Supply_Category": 0,
+            "Contact": 0,
+            "Verification": 0
+        }
+    }
+]
