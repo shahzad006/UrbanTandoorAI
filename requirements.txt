@@ -1,0 +1,15 @@
+pandas
+openpyxl
+python-docx
+sqlmodel
+sqlalchemy
+psycopg[binary]
+asyncpg
+alembic
+pgvector
+sentence-transformers
+fastapi
+uvicorn
+python-dotenv
+pydantic
+pydantic-settings
